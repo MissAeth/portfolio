@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Uniforme Urbain — Albane Knoblauch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="nav-name" href="../index.html">Albane Knoblauch</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#creations">Créations perso</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="shell">
+
+  <a class="back-link reveal" href="../index.html">← Retour au portfolio</a>
+
+  <header class="project-hero reveal">
+    <div class="project-meta">
+      <span class="meta-tag">Graphisme</span>
+      <span class="meta-tag">Identité de marque</span>
+      <span class="meta-tag">Cas d'école — non déployé</span>
+    </div>
+    <h1 class="project-title">Studio Uniforme Urbain</h1>
+    <div class="project-sub">// [À COMPLÉTER — sous-titre du projet]</div>
+    <p class="project-lead">[À COMPLÉTER — 1 à 2 phrases de résumé : quel était le besoin de l'entreprise, et ce que ton travail a proposé.]</p>
+  </header>
+
+  <div class="brief-grid reveal">
+    <div class="brief-card">
+      <div class="label">Client</div>
+      <div class="value">Studio Uniforme Urbain</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Cadre</div>
+      <div class="value">Cas d'école — Rocket School</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Mon rôle</div>
+      <div class="value">[À COMPLÉTER]</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Statut</div>
+      <div class="value">Non déployé par l'entreprise</div>
+    </div>
+  </div>
+
+  <section class="block reveal">
+    <h2>Le contexte</h2>
+    <p>[À COMPLÉTER — Présente l'entreprise et le brief de départ : quel était le secteur d'activité, quelle était la demande ?]</p>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ma démarche</h2>
+    <ul>
+      <li>[À COMPLÉTER — étape 1 : recherche, benchmark, positionnement...]</li>
+      <li>[À COMPLÉTER — étape 2 : conception, choix créatifs...]</li>
+      <li>[À COMPLÉTER — étape 3 : finalisation, présentation...]</li>
+    </ul>
+  </section>
+
+  <section class="block reveal">
+    <h2>Le rendu</h2>
+    <div class="media-row">
+      <div class="media-frame">[Visuel principal à insérer]</div>
+      <div class="media-frame">[Déclinaison / second visuel à insérer]</div>
+    </div>
+    <div class="media-frame">[Visuel plus large — mockup, application]</div>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ce que ce projet démontre</h2>
+    <p>[À COMPLÉTER — Même non déployé, qu'est-ce que ce projet prouve sur ta capacité de création ? Complexité du brief, contrainte particulière relevée, etc.]</p>
+  </section>
+
+  <nav class="project-nav reveal">
+    <a href="provence-hydro-energie.html">← Projet précédent : Provence Hydro Énergie</a>
+    <a href="teach-io.html">Projet suivant : Teach.io →</a>
+  </nav>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Travaillons ensemble</h2>
+    <p class="lead">Disponible pour des missions freelance. Basée à Martigues, mobile (Permis B + véhicule).</p>
+    <div class="footer-actions">
+      <a class="btn btn-primary" href="mailto:albane.lobreau@gmail.com">Écrire un email</a>
+      <a class="btn btn-ghost" href="tel:+33675274909">06 75 27 49 09</a>
+    </div>
+    <div class="footer-bottom">
+      <span>Albane Knoblauch — Growth Hacker &amp; Marketing Digital</span>
+      <span>Traverse des Amaryllis, Bât G, 13500 Martigues</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el=> io.observe(el));
+} else {
+  revealEls.forEach(el=> el.classList.add('in-view'));
+}
+</script>
+</body>
+</html>

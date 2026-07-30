@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provence Hydro Énergie — Albane Knoblauch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="nav-name" href="../index.html">Albane Knoblauch</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#creations">Créations perso</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="shell">
+
+  <a class="back-link reveal" href="../index.html">← Retour au portfolio</a>
+
+  <header class="project-hero reveal">
+    <div class="project-meta">
+      <span class="meta-tag">Identité de marque</span>
+      <span class="meta-tag">Graphisme</span>
+      <span class="meta-tag">Cas d'école — adopté par l'entreprise</span>
+    </div>
+    <h1 class="project-title">Provence Hydro Énergie</h1>
+    <div class="project-sub">// Identité visuelle &amp; supports de communication</div>
+    <p class="project-lead">[À COMPLÉTER — 1 à 2 phrases de résumé : quel était le besoin de l'entreprise, et ce que ton travail a apporté concrètement.]</p>
+  </header>
+
+  <div class="brief-grid reveal">
+    <div class="brief-card">
+      <div class="label">Client</div>
+      <div class="value">Provence Hydro Énergie</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Cadre</div>
+      <div class="value">Cas d'école — Rocket School</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Mon rôle</div>
+      <div class="value">[À COMPLÉTER]</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Statut</div>
+      <div class="value">Adopté par l'entreprise</div>
+    </div>
+  </div>
+
+  <section class="block reveal">
+    <h2>Le contexte</h2>
+    <p>[À COMPLÉTER — Présente l'entreprise et le problème de départ : pourquoi avaient-ils besoin de ce travail ? Quel était le brief exact ?]</p>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ma démarche</h2>
+    <ul>
+      <li>[À COMPLÉTER — étape 1 de ta méthode : recherche, benchmark, brief client...]</li>
+      <li>[À COMPLÉTER — étape 2 : conception, itérations, choix créatifs...]</li>
+      <li>[À COMPLÉTER — étape 3 : validation, livraison, ajustements...]</li>
+    </ul>
+  </section>
+
+  <section class="block reveal">
+    <h2>Le rendu</h2>
+    <div class="media-row">
+      <div class="media-frame">[Visuel du logo / identité visuelle à insérer]</div>
+      <div class="media-frame">[Visuel d'un support de communication à insérer]</div>
+    </div>
+    <div class="media-frame">[Visuel plus large — mockup, application de la charte, etc.]</div>
+  </section>
+
+  <section class="block reveal">
+    <h2>Résultat</h2>
+    <p>[À COMPLÉTER — En quoi le fait que l'entreprise ait adopté ce travail est un signal fort : a-t-elle été mise en usage, quels retours as-tu eus ?]</p>
+    <div class="result-grid">
+      <div class="result-card">
+        <div class="num">[X]</div>
+        <div class="lbl">[Indicateur]</div>
+      </div>
+      <div class="result-card">
+        <div class="num">[X]</div>
+        <div class="lbl">[Indicateur]</div>
+      </div>
+      <div class="result-card">
+        <div class="num">✓</div>
+        <div class="lbl">Adopté en production</div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="project-nav reveal">
+    <a href="../index.html#projets">← Tous les projets</a>
+    <a href="studio-uniforme-urbain.html">Projet suivant : Studio Uniforme Urbain →</a>
+  </nav>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Travaillons ensemble</h2>
+    <p class="lead">Disponible pour des missions freelance. Basée à Martigues, mobile (Permis B + véhicule).</p>
+    <div class="footer-actions">
+      <a class="btn btn-primary" href="mailto:albane.lobreau@gmail.com">Écrire un email</a>
+      <a class="btn btn-ghost" href="tel:+33675274909">06 75 27 49 09</a>
+    </div>
+    <div class="footer-bottom">
+      <span>Albane Knoblauch — Growth Hacker &amp; Marketing Digital</span>
+      <span>Traverse des Amaryllis, Bât G, 13500 Martigues</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el=> io.observe(el));
+} else {
+  revealEls.forEach(el=> el.classList.add('in-view'));
+}
+</script>
+</body>
+</html>

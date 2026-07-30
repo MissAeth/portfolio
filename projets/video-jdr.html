@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Montage vidéo — Albane Knoblauch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="nav-name" href="../index.html">Albane Knoblauch</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#creations">Créations perso</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="shell">
+
+  <a class="back-link reveal" href="../index.html">← Retour au portfolio</a>
+
+  <header class="project-hero reveal">
+    <div class="project-meta">
+      <span class="meta-tag">Montage vidéo</span>
+      <span class="meta-tag">Habillage &amp; identité visuelle</span>
+      <span class="meta-tag">Création personnelle — depuis 2015</span>
+    </div>
+    <h1 class="project-title">Montage &amp; habillage vidéo</h1>
+    <div class="project-sub">// La Taverne de la Rose d'Or, Time to Roll &amp; La Tanière des Tanukis Rôlistes</div>
+    <p class="project-lead">Depuis 2015, je conçois et monte du contenu vidéo pour des chaînes et une association dédiées au jeu de rôle : réalisation de vidéos YouTube, création de miniatures, overlays et animations, en cohérence avec l'identité visuelle de chaque chaîne.</p>
+  </header>
+
+  <div class="brief-grid reveal">
+    <div class="brief-card">
+      <div class="label">Cadre</div>
+      <div class="value">Chaînes YouTube &amp; association</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Mon rôle</div>
+      <div class="value">Monteuse &amp; créatrice de contenu</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Depuis</div>
+      <div class="value">2015</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Statut</div>
+      <div class="value">Contenus publiés</div>
+    </div>
+  </div>
+
+  <section class="block reveal">
+    <h2>La Taverne de la Rose d'Or</h2>
+    <p>[À COMPLÉTER — présentation de ta chaîne personnelle : format, ligne éditoriale, ce qui la distingue.]</p>
+    <div class="media-frame">[Lien / vignette vers la chaîne à insérer]</div>
+  </section>
+
+  <section class="block reveal">
+    <h2>Time to Roll &amp; La Tanière des Tanukis Rôlistes</h2>
+    <ul>
+      <li><strong>Montage et habillage vidéo :</strong> réalisation de vidéos YouTube, création de miniatures, overlays et animations pour renforcer l'identité visuelle.</li>
+      <li><strong>Gestion de contenus et ligne éditoriale :</strong> élaboration de formats adaptés à la cible, planification de publications, rédaction de descriptions optimisées.</li>
+      <li><strong>Création de supports visuels :</strong> conception de visuels attractifs pour les réseaux sociaux (Facebook, Instagram).</li>
+      <li><strong>Animation de communauté :</strong> modération de discussions, interaction avec les abonnés, organisation d'événements en ligne.</li>
+      <li><strong>Storytelling &amp; créativité :</strong> conception de récits immersifs, capacité à captiver une audience et à adapter les formats.</li>
+    </ul>
+    <div class="media-row">
+      <div class="media-frame">[Vignette vidéo à insérer]</div>
+      <div class="media-frame">[Exemple d'overlay / habillage à insérer]</div>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ce que ces projets démontrent</h2>
+    <p>Une maîtrise complète de la chaîne de production vidéo — du montage à l'habillage graphique, en passant par la ligne éditoriale et l'animation de communauté — appliquée sur la durée (10 ans) à des formats et publics variés.</p>
+  </section>
+
+  <nav class="project-nav reveal">
+    <a href="jdr-univers.html">← Projet précédent : Créations JDR</a>
+    <a href="../index.html#projets">Retour à tous les projets →</a>
+  </nav>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Travaillons ensemble</h2>
+    <p class="lead">Disponible pour des missions freelance. Basée à Martigues, mobile (Permis B + véhicule).</p>
+    <div class="footer-actions">
+      <a class="btn btn-primary" href="mailto:albane.lobreau@gmail.com">Écrire un email</a>
+      <a class="btn btn-ghost" href="tel:+33675274909">06 75 27 49 09</a>
+    </div>
+    <div class="footer-bottom">
+      <span>Albane Knoblauch — Growth Hacker &amp; Marketing Digital</span>
+      <span>Traverse des Amaryllis, Bât G, 13500 Martigues</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el=> io.observe(el));
+} else {
+  revealEls.forEach(el=> el.classList.add('in-view'));
+}
+</script>
+</body>
+</html>

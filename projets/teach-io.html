@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teach.io — Albane Knoblauch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="nav-name" href="../index.html">Albane Knoblauch</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#creations">Créations perso</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="shell">
+
+  <a class="back-link reveal" href="../index.html">← Retour au portfolio</a>
+
+  <header class="project-hero reveal">
+    <div class="project-meta">
+      <span class="meta-tag">Content marketing</span>
+      <span class="meta-tag">Stratégie éditoriale</span>
+      <span class="meta-tag">Cas d'école — non déployé</span>
+    </div>
+    <h1 class="project-title">Teach.io</h1>
+    <div class="project-sub">// [À COMPLÉTER — sous-titre du projet]</div>
+    <p class="project-lead">[À COMPLÉTER — 1 à 2 phrases de résumé : quel était le besoin de l'entreprise, et ce que ta stratégie a proposé.]</p>
+  </header>
+
+  <div class="brief-grid reveal">
+    <div class="brief-card">
+      <div class="label">Client</div>
+      <div class="value">Teach.io</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Cadre</div>
+      <div class="value">Cas d'école — Rocket School</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Mon rôle</div>
+      <div class="value">[À COMPLÉTER]</div>
+    </div>
+    <div class="brief-card">
+      <div class="label">Statut</div>
+      <div class="value">Non déployé par l'entreprise</div>
+    </div>
+  </div>
+
+  <section class="block reveal">
+    <h2>Le contexte</h2>
+    <p>[À COMPLÉTER — Présente Teach.io, son secteur, sa cible, et le problème business auquel répondait le brief.]</p>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ma démarche</h2>
+    <ul>
+      <li>[À COMPLÉTER — analyse du besoin, audit existant...]</li>
+      <li>[À COMPLÉTER — construction de la stratégie de contenu / calendrier éditorial...]</li>
+      <li>[À COMPLÉTER — production d'exemples de contenus...]</li>
+    </ul>
+  </section>
+
+  <section class="block reveal">
+    <h2>Le rendu</h2>
+    <div class="media-row">
+      <div class="media-frame">[Extrait de stratégie / calendrier éditorial à insérer]</div>
+      <div class="media-frame">[Exemple de contenu produit à insérer]</div>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2>Ce que ce projet démontre</h2>
+    <p>[À COMPLÉTER — Ce que la stratégie proposée révèle de ta capacité d'analyse et de structuration, même sans déploiement réel.]</p>
+  </section>
+
+  <nav class="project-nav reveal">
+    <a href="studio-uniforme-urbain.html">← Projet précédent : Studio Uniforme Urbain</a>
+    <a href="azuvia.html">Projet suivant : Azuvia →</a>
+  </nav>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Travaillons ensemble</h2>
+    <p class="lead">Disponible pour des missions freelance. Basée à Martigues, mobile (Permis B + véhicule).</p>
+    <div class="footer-actions">
+      <a class="btn btn-primary" href="mailto:albane.lobreau@gmail.com">Écrire un email</a>
+      <a class="btn btn-ghost" href="tel:+33675274909">06 75 27 49 09</a>
+    </div>
+    <div class="footer-bottom">
+      <span>Albane Knoblauch — Growth Hacker &amp; Marketing Digital</span>
+      <span>Traverse des Amaryllis, Bât G, 13500 Martigues</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el=> io.observe(el));
+} else {
+  revealEls.forEach(el=> el.classList.add('in-view'));
+}
+</script>
+</body>
+</html>
